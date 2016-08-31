@@ -1,0 +1,50 @@
+# Project information
+site_name: 'Yildiz'
+site_description: 'Docker file for MkDocs'
+site_author: 'Cengiz Ilerler'
+site_url: 'https://cilerler.github.io/yildiz'
+
+# Repository
+repo_name: 'GitHub'
+repo_url: 'https://github.com/cilerler/yildiz'
+
+# Copyright
+copyright: 'Copyright (c) 2016 CENGIZ ILERLER'
+
+# Documentation and theme
+docs_dir: 'docs'
+#theme: 'readthedocs'
+theme: 'material'
+
+# Options
+extra:
+  version: '0.1.0'
+  logo: 'images/logo.png'
+  palette:
+    primary: 'blue'
+    accent: 'light blue'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  i18n:
+    prev: 'Previous'
+    next: 'Next'
+  author:
+    github: 'cilerler'
+    twitter: 'cilerler'
+
+# Google Analytics
+google_analytics:
+  - 'UA-????????-?'
+  - 'auto'
+
+# Extensions
+markdown_extensions:
+  - codehilite(css_class=code)
+  - admonition
+  - toc:
+      permalink: '#'
+
+# Pages
+pages:
+- Home: index.md
