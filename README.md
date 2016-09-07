@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/cilerler/mkdocs.svg)](http://microbadger.com/images/cilerler/mkdocs "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/cilerler/mkdocs.svg)](http://microbadger.com/images/cilerler/mkdocs "Get your own version badge on microbadger.com")
+
 # Docker file for [MkDocs](http://www.mkdocs.org/) _(including [Material theme](http://squidfunk.github.io/mkdocs-material/))_
 
 MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. Documentation source files are written in Markdown, and configured with a single YAML configuration file.
