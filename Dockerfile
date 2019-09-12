@@ -1,14 +1,8 @@
-FROM python:3.4
+FROM google/cloud-sdk:latest
 
-MAINTAINER Cengiz Ilerler <cengiz@ilerler.com>
+MAINTAINER Cengiz Ilerler <cilerler@gmail.com>
 
-RUN pip install mkdocs
-RUN pip install mkdocs-material
-
-RUN mkdir /docs
-WORKDIR /docs
-VOLUME /docs
-
-EXPOSE 8000
-
-CMD mkdocs serve
+RUN curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add - \
+    && sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main" > /etc/apt/sources.list.d/microsoft.list' \
+    && apt-get -qqy update \
+    && apt-get install -qqy powershell
