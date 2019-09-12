@@ -10,7 +10,7 @@ line tools of Google Cloud SDK (`gcloud`, `gsutil`, `bq`) as well as all
 
 ## Usage
 
-To use this image, pull from [Docker Hub](https://hub.docker.com/r/google/cloud-sdk/), run the following command:
+To use this image, pull from [Docker Hub](https://hub.docker.com/r/cilerler/google-cloud-sdk/), run the following command:
 
 ```
 docker pull cilerler/google-cloud-sdk:latest
