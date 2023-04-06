@@ -14,8 +14,10 @@ RUN apt-get -qqy update \
      && rm -rf /var/lib/apt/lists/*
  
 # install SQL Server drivers and tools
-RUN apt-get update && ACCEPT_EULA=Y apt-get install -y msodbcsql17 mssql-tools \
+RUN apt-get update && ACCEPT_EULA=Y apt-get install -y msodbcsql18 mssql-tools \
      && echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile \
      && echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc \
      && /bin/bash -c "source ~/.bashrc"
 
+# install SqlServer module in PowerShell
+RUN pwsh -Command "Install-Module -Name SqlServer -Force"
